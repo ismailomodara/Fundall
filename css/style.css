@@ -3,7 +3,7 @@ html, body {
   height: 100%;
   width: 100%;
   overflow-x: hidden;
-
+  scroll-behavior: smooth;
 }
 
 body {
@@ -141,7 +141,28 @@ header {
   display: flex;
   align-items: center;
   margin-top: 70px;
+  position: relative;
 }
+
+.header-oval {
+  position: absolute;
+  top: 15%;
+  left: 0;
+  height: 400px;
+}
+
+.header-side-image {
+  position: absolute;
+  right: 0;
+  top: 0;
+  height: 100%;
+  width: 100px;
+}
+
+.header-oval img, .header-side-image img {
+  height: 100%;
+}
+
 
 header .header-text {
   width: 80%;
@@ -370,6 +391,10 @@ header .sectional-illustration {
 
 footer {
   background: #e5f7e6;
+  background-image: url("../img/footer-background.png");
+  background-position: bottom;
+  background-repeat: no-repeat; 
+  background-size: contain;
   padding: 60px 0;
 }
 
