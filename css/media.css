@@ -8,6 +8,19 @@
   html, body {
     font-size: 15px;
   }
+  .section-types p {
+    font-size: 1.1rem;
+  }
+}
+
+@media only screen and (max-width: 1024px) {
+  .section-types {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .section-main--text {
+    margin-bottom: 100px;
+  }
 }
 
 @media only screen and (max-width: 992px) {
@@ -93,6 +106,9 @@
   }
   .invite a:not(:last-child) {
     margin-right: 0;
+  }
+  .section-main--text h1 {
+    font-size: 2.7rem;
   }
 }
 
