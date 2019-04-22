@@ -60,8 +60,10 @@ p {
   box-shadow: none;
 }
 
-.btn-primary, .btn-primary:hover {
-  background: #56ca1f;
+.btn-primary, .btn-primary:hover, .btn-primary:focus {
+  background: #56ca1f !important;
+  outline: none !important;
+  box-shadow: none !important;
 }
 
 header, section {
@@ -119,6 +121,18 @@ nav {
 
 .navbar-nav .nav-item.active .nav-link {
   color: #56ca1f !important;
+}
+
+.early-access--cta {
+  border-radius: 0;
+  padding: 15px 25px;
+  position: relative;
+  right: 0;
+  bottom: -11px;
+}
+
+.early-access--cta span {
+  z-index: 1;
 }
 
 header {
@@ -234,7 +248,7 @@ header .sectional-illustration {
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin-bottom: 80px;
+  margin-bottom: 60px;
 }
 
 .partners h4 {
@@ -251,6 +265,10 @@ header .sectional-illustration {
   width: auto;
   height: 40px;
   margin-right: 25px;
+}
+
+.partners-logo img.crevance {
+  margin-top: -17px;
 }
 
 .manifesto h1, .about-us h1 {
@@ -316,7 +334,8 @@ header .sectional-illustration {
 
 .join-our--team img {
   height: auto;
-  width: 120px;
+  min-height: 200px;
+  width: 200px;
   margin-bottom: 12px;
 }
 
@@ -356,9 +375,11 @@ footer {
 
 footer .footer-nav {
   display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
-footer .footer-nav > div:first-child {
+footer .footer-nav div > div:first-child {
   margin-right: 80px;
 }
 
@@ -383,11 +404,6 @@ footer li a {
   font-weight: 600;
 }
 
-footer .contact div {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
 
 footer ul.social-media {
   display: flex;
@@ -419,4 +435,42 @@ footer h3 {
 footer .copyright p {
   font-size: 0.8rem;
   color: rgba(0,0,0,0.8);
+}
+
+.thank-you {
+  min-height: calc(80vh - 70px);
+  display: flex;
+  align-items: center;
+  margin-top: 70px;
+}
+
+.thank-you h4 {
+  font-weight: 700;
+  margin-bottom: 15px;
+  text-align: center;
+}
+.invite {
+  display: flex;
+  justify-content: center;
+}
+
+.invite a {
+  border-radius: 0;
+  color: #fff;
+}
+
+.invite .facebook {
+  background: #3b5998;
+}
+
+.invite .twitter {
+  background: #38A1F3;
+}
+
+.invite .invite-link {
+  background: #007ab9;
+}
+
+.invite a:not(:last-child) {
+  margin-right: 12px;
 }
