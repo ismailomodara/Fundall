@@ -2,7 +2,6 @@ html, body {
   font-size: 16px;
   height: 100%;
   width: 100%;
-  overflow-x: hidden;
   scroll-behavior: smooth;
 }
 
@@ -153,7 +152,7 @@ header {
 
 .header-side-image {
   position: absolute;
-  right: 0;
+  right: 20px;
   top: 0;
   height: 100%;
   width: 100px;
