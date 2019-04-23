@@ -330,6 +330,30 @@ header .sectional-illustration {
   text-align: justify;
 }
 
+.about-us {
+  position: relative;
+}
+
+.about-side-image {
+  position: absolute;
+  height: 50%;
+}
+
+.about-side-image.left {
+  left: 0;
+  top: 0;
+  transform: rotate(180deg);
+}
+
+.about-side-image.right {
+  right: 0;
+  top: 30%;
+}
+
+.about-side-image img {
+  height: 100%;
+}
+
 .about-us h4 {
   font-weight: 700;
   font-size: 1.4rem;
@@ -458,6 +482,13 @@ footer h3 {
 footer .copyright p {
   font-size: 0.8rem;
   color: rgba(0,0,0,0.8);
+}
+
+.ng-flag {
+  height: 20px;
+  width: auto;
+  margin-right: 5px;
+  margin-top: -3px;
 }
 
 .thank-you {
