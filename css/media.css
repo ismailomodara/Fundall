@@ -73,20 +73,63 @@
   html, body {
     font-size: 14px;
   }
+  header .header-text {
+    margin-top: 0;
+    margin-bottom: 20px;
+  }
+  header, section {
+    padding: 40px 0;
+  }
   header .subscribe button {
     margin: auto auto 20px;
   }
+
+  .features .feature {
+    flex-direction: column;
+  }
+
+  .features .feature.even {
+    flex-direction: column-reverse;
+  }
+
+  .feature-image {
+    margin-bottom: 20px;
+  }
+  .feature-text {
+    width: 100%;
+  }
+
+  .why-banner {
+    display: none;
+  }
+
+  .summary-wrap {
+    opacity: 1;
+  }
+
   .subscribe input {
     width: 100%;
   }
   .section-types {
     display: block;
   }
+
+  .partners {
+    flex-direction: column;
+  }
+
+  .partners h4 {
+    margin-bottom: 40px;
+    margin-right: 0;
+  }
+
   .partners .partners-logo {
     flex-direction: column;
   }
   .partners .partners-logo img {
-    margin-bottom: 20px;
+    margin-bottom: 40px;
+    margin-right: 0;
+    height: 35px;
   }
   .manifesto-cards {
     width: 95%;
@@ -94,9 +137,6 @@
   
   .partners-logo img.crevance {
     margin-top: 0;
-  }
-  .footer-nav {
-    flex-direction: column;
   }
   .invite {
     flex-direction: column;
@@ -110,12 +150,19 @@
   .section-main--text h1 {
     font-size: 2.7rem;
   }
+  .ecosystem img {
+    height: 250px;
+  }
+  .ecosystem img.debit-card {
+    height: 100px;
+  }
 }
 
 @media only screen and (max-width: 600px) {
   .get-early--access .subscribe {
     flex-direction: column;
     align-items: center;
+    width: 100%;
   }
   .get-early--access .subscribe h4 {
     margin-bottom: 15px;
