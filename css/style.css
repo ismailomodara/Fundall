@@ -421,6 +421,11 @@ section h1 + h4 {
   pointer-events: none;
 }
 
+.banner-card .banner-svg.card-stack {
+  position: relative;
+  left: -26%;
+}
+
 .banner-card {
   position: absolute;
   top: 0;
