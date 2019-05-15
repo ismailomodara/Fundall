@@ -1,3 +1,13 @@
+@font-face {
+  font-family: 'Scriptina';
+  src: url('scriptina.eot');
+  src: url('scriptina.eot?#iefix') format('embedded-opentype'),
+      url('scriptina.woff2') format('woff2'),
+      url('scriptina.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
 html, body {
   font-size: 16px;
   height: 100%;
@@ -609,30 +619,44 @@ footer .copyright p {
   margin: auto;
 }
 
-.invite {
+.thank-you--message h3, .thank-you--message h4 {
+  font-weight: 700;
+}
+
+.thank-you--message h3 {
+  font-size: 2.3rem;
+  margin-bottom: 40px;
+}
+
+.thank-you--message h4 {
+  font-size: 1.5rem;
+}
+
+.signature {
+  font-family: 'Scriptina';
+  font-size: 20px;
+}
+
+.share {
   display: flex;
   justify-content: center;
+  align-items: center;
 }
 
-.invite a {
+.share h4 {
+  margin-bottom: 0;
+  margin-right: 30px;
+}
+
+.share a {
+  margin-right: 10px;
+}
+
+.share .invite-link {
+  background: #007ab9;
   border-radius: 0;
   color: #fff;
-}
-
-.invite .facebook {
-  background: #3b5998;
-}
-
-.invite .twitter {
-  background: #38A1F3;
-}
-
-.invite .invite-link {
-  background: #007ab9;
-}
-
-.invite a:not(:last-child) {
-  margin-right: 12px;
+  margin-left: 30px;
 }
 
 
@@ -692,134 +716,196 @@ footer .copyright p {
 }
 
 
-.section-main--text {
-  margin-bottom: 130px;
-}
-
-.section-main--text h1 {
-  margin-bottom: 20px;
-}
-
-.section-main--text p {
-  font-size: 1.2rem;
-}
-
-.section-types {
+/* Sign Up */
+.signup {
+  height: auto;
+  width: 100%;
+  padding: 0;
   display: flex;
+}
+
+.signup-background {
+  width: 36%;
+  height: 100vh;
+  background: #F2F2F2;
+  padding: 80px 60px;
+  position: fixed;
+  display: flex;
+  justify-content: center;
   align-items: center;
+  color: #000000;
 }
 
-.section-types p {
-  color: #56ca1f;
-  font-weight: 700;
-  margin-right: 12px;
+.signup-background .navbar-brand {
+  position: absolute;
+  top: 80px;
+  left: 30px;
 }
 
-.section-more--info {
-  font-weight: 700;
-}
-
-.spend-and--manage {
-  padding-bottom: 0;
-}
-
-/* .ecosystem h1 {
-  margin-bottom: 40px;
-  text-align: center;
-}
-
-.ecosystem p {
-  font-size: 1.2rem;
-  line-height: 2;
-}
-
-.ecosystem .ecosystem-list p {
-  font-weight: 700;
-  font-size: 1.3rem;
-} */
-
-.our-partners .sectional-illustration {
-  width: 400px;
-}
-
-.manifesto h1, .about-us h1 {
-  margin-bottom: 20px;
-  text-align: center;
-}
-
-.manifesto p {
-  font-size: 1.2rem;
+.signup-background h3 {
   line-height: 1.5;
-  text-align: center;
 }
 
-.manifesto-cards {
-  width: 82%;
+.signup-form {
+  background: #ffffff;
+  width: 64%;
+  position: relative;
+  left: 36%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 100px 60px;
+}
+
+.mobile-header {
+  display: none;
+  position: absolute;
+  top: 60px;
+  left: 40px;
+}
+
+.mobile-header a {
+  margin-bottom: 60px;
+}
+
+.mobile-header h3 {
+  width: 80%;
+  text-align: center;
   margin: auto;
 }
 
-.manifesto-card {
-  padding: 30px;
-  border-radius: 40px;
+.signup-form form {
+  width: 60%;
 }
 
-.manifesto-card.one {
-  background: #f9e7af;
-}
-
-.manifesto-card.two {
-  background: #ffd6c9;
-}
-
-.manifesto h3 {
-  text-decoration: underline;
-  text-align: center;
-  margin-bottom: 15px;
-}
-
-.manifesto-card p {
-  font-size: 1.05rem;
-  text-align: justify;
-}
-
-.about-us {
+.signup-form .inputBox {
   position: relative;
 }
 
-.about-side-image {
-  position: absolute;
-  height: 50%;
-}
-
-.about-side-image.left {
-  left: 0;
-  top: 0;
-  transform: rotate(180deg);
-}
-
-.about-side-image.right {
-  right: 0;
-  top: 30%;
-}
-
-.about-side-image img {
-  height: 100%;
-}
-
-.about-us h4 {
-  font-weight: 700;
-  font-size: 1.4rem;
-}
-
-.about-us .team-image {
-  height: 100%;
-  width: auto;
-}
-
-.about-us .team-image img {
-  height: 100%;
+.signup-form .inputBox input {
   width: 100%;
-  object-fit: cover;
+  padding:  12px;
+  padding-left: 40px;
+  font-size: 1rem;
+  color: #000;
+  font-weight: 700;
+  letter-spacing: 0.062rem;
+  margin-bottom: 35px;
+  border: 1px solid #828282;
+  outline: none;
+  box-shadow: none;
+  border-radius: 5px;
+  background: transparent;
+  transition: border 0.3s ease-out;
 }
 
+.signup-form .inputBox input:focus {
+  border: 1px solid #2EC033;
+  transition: border 0.3s ease-in;
+}
 
+.signup-form .inputBox img {
+  position: absolute;
+  top: 15px;
+  left: 0;
+  z-index: 1;
+  height: 21px;
+  margin-left: 12px;
+  pointer-events: none;
+}
+
+.signup-form .inputBox label {
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding: 10px 7px;
+  font-size: 0.8rem;
+  color: #2EC033;
+  background: #ffffff;
+  margin: 0 12px;
+  pointer-events: none;
+  transition: color 0.3s ease-in;
+}
+
+.signup-form .inputBox input ~ label,
+.signup-form .inputBox input:valid ~ label,
+.signup-form .inputBox input:not([value=""]) ~ label {
+  top: -1.125rem;
+  left: 0;
+  color: #828282;
+  transition: color 0.3s ease-out;
+}
+
+.signup-form .inputBox input:focus ~ label {
+  color: #2EC033;
+}
+
+.no-radius {
+  border-radius: 0;
+}
+
+.form-group {
+  display: block;
+  margin-bottom: 15px;
+}
+
+.form-group input {
+  padding: 0;
+  height: initial;
+  width: initial;
+  margin-bottom: 0;
+  display: none;
+  cursor: pointer;
+}
+
+.form-group label {
+  position: relative;
+  cursor: pointer;
+  width: 100%;
+}
+
+.form-group input:checked + label > div {
+  background: #56ca1f;
+  color: #ffffff;
+  transition: all 0.3s ease-in;
+}
+
+label > div {
+  height: 40px;
+  width: 100%;
+  background: #F2F2F2;
+  border-radius: 50px;
+  color: #000;
+  padding: 15px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+label > div::after {
+  content: '+';
+  display: block;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  right: 18px;
+  font-size: 30px;
+  font-weight: 700;
+  color: #2EC033;
+}
+
+.form-group input:checked + label > div::after {
+  content: '-';
+  color: #ffffff;
+}
+
+label > div p {
+  font-size: 15px;
+  font-weight: 700;
+}
+
+.btn.no-radius {
+  padding: 15px 35px;
+  font-size: 16px;
+}

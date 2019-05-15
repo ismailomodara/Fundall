@@ -1,3 +1,12 @@
+@media only screen and (min-width: 1600px) {
+  .signup-form form {
+    width: 40%;
+  }
+  .signup-form {
+    height: 100vh;
+  }
+}
+
 @media only screen and (min-width: 1440px){
   .container {
     max-width: 1260px;
@@ -20,6 +29,25 @@
   }
   .section-main--text {
     margin-bottom: 100px;
+  }
+  .signup {
+    flex-direction: column;
+  }
+  .signup-background {
+    display: none;
+  }
+  .signup-form {
+    width: 100%;
+  }
+  .signup-form {
+    left: 0;
+  }
+  .mobile-header {
+    display: block;
+  }
+
+  .signup-form form {
+    margin-top: 230px;
   }
 }
 
@@ -138,15 +166,29 @@
   .partners-logo img.crevance {
     margin-top: 0;
   }
-  .invite {
+  
+  .share {
     flex-direction: column;
   }
-  .invite a {
-    margin-bottom: 12px;
-  }
-  .invite a:not(:last-child) {
+
+  .share h3, .share h4 {
     margin-right: 0;
+    margin-left: 0;
+    margin-bottom: 20px;
   }
+
+  .share-links {
+    margin-bottom: 20px;
+  }
+
+  .invite-link {
+    margin: 0;
+  }
+
+  .share a:not(:last-child) {
+    margin-right: 12px;
+  }
+
   .section-main--text h1 {
     font-size: 2.7rem;
   }
@@ -155,6 +197,9 @@
   }
   .ecosystem img.debit-card {
     height: 100px;
+  }
+  .signup-form form {
+    width: 70%;
   }
 }
 
@@ -176,5 +221,15 @@
   }
   .social-media + p {
     margin-bottom: 12px;
+  }
+  .signup-form form {
+    width: 100%;
+  }
+  .signup-form {
+    padding: 100px 30px;
+  }
+  .mobile-header h3 {
+    width: 100%;
+    text-align: left;
   }
 }
