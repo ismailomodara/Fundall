@@ -81,6 +81,17 @@ p {
   box-shadow: none !important;
 }
 
+.btn-secondary {
+  background: transparent !important;
+  border: 1px solid #000000;
+  color: #56ca1f;
+}
+
+.btn-secondary:hover, .btn-secondary:focus {
+  background: #000000 !important;
+  color: #ffffff;
+}
+
 header, section {
   padding: 80px 0;
   overflow-x: hidden;
@@ -601,7 +612,7 @@ footer .copyright p {
 
 
 /* Thank you */
-.thank-you {
+.thank-you, .error {
   display: flex;
   align-items: center;
   margin-top: 70px;
@@ -617,22 +628,22 @@ footer .copyright p {
   font-weight: 700;
 }
 
-.thank-you--illustration {
+.thank-you--illustration, .error-illustration {
   width: auto;
   height: 280px;
   margin: auto;
 }
 
-.thank-you--message h3, .thank-you--message h4 {
+.thank-you--message h3, .thank-you--message h4, .error-message h3, .error-message h4 {
   font-weight: 700;
 }
 
-.thank-you--message h3 {
+.thank-you--message h3, .error-message h3 {
   font-size: 2.3rem;
   margin-bottom: 40px;
 }
 
-.thank-you--message h4 {
+.thank-you--message h4, .error-message h4 {
   font-size: 1.5rem;
 }
 
@@ -912,4 +923,17 @@ label > div p {
 .btn.no-radius {
   padding: 15px 35px;
   font-size: 16px;
+}
+
+
+/* Error */
+.error {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.error a {
+  margin-right: 20px;
+  font-size: 12px;
 }
