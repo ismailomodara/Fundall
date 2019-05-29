@@ -226,6 +226,32 @@
     margin-bottom: 20px;
     margin-right: 0;
   }
+  
+  .contact-support img,
+  .careers-cta img {
+    display: none;
+  }
+  .faq-header > div {
+    width: 100%;
+  }
+  .faq-questions ul {
+    list-style: square;
+  }
+  .faq-category--container {
+    top: -9%;
+    width: 90%;
+  }
+  .faq-category {
+    margin-bottom: 30px;
+  }
+  .articles-to--read {
+    margin-top: 220%;
+  }
+  .it-about--you {
+    text-align: center;
+    margin-top: 15px;
+  }
+  
 }
 
 @media only screen and (max-width: 600px) {
